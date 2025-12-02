@@ -32,7 +32,7 @@ function StatusDetail() {
         name: 'Max',
         species: 'Dog',
         breed: 'Golden Retriever',
-        age: '2 years',
+        age: '7 years',
         sex: 'Female',
         size: 'Large'
       };

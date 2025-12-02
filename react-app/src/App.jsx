@@ -5,18 +5,24 @@ import ShelterDetail from './pages/ShelterDetail';
 import Confirmation from './pages/Confirmation';
 import Status from './pages/Status';
 import StatusDetail from './pages/StatusDetail';
+import Profile from './pages/Profile';
+import Login from './pages/Login';
+import SignUp from './pages/SignUp';
 import './App.css';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Home />} />
         <Route path="/shelter-search" element={<ShelterSearch />} />
         <Route path="/shelter-detail" element={<ShelterDetail />} />
         <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/status" element={<Status />} />
         <Route path="/status-detail" element={<StatusDetail />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

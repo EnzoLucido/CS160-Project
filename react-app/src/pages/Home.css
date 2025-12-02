@@ -8,11 +8,33 @@
   color: white;
   padding: 30px 20px;
   text-align: center;
+  position: relative;
 }
 
 .home-header h1 {
   font-size: 28px;
   margin: 0;
+}
+
+.logout-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: white;
+  color: #4a7c7e;
 }
 
 .home-content {

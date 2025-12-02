@@ -13,17 +13,27 @@ function Home() {
   }
 
   function goToProfile() {
-    alert('Profile feature coming soon!');
+    navigate('/profile');
   }
 
   function goToStatus() {
     navigate('/status');
   }
 
+  function handleLogout() {
+    // Clear login status
+    localStorage.removeItem('isLoggedIn');
+    // Navigate to login page
+    navigate('/login');
+  }
+
   return (
     <div className="home-container">
       <div className="home-header">
         <h1>Pet Shelter App</h1>
+        <button className="logout-button" onClick={handleLogout}>
+          Logout
+        </button>
       </div>
 
       <div className="home-content">
