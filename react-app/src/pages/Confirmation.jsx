@@ -9,11 +9,11 @@ function Confirmation() {
   }
 
   function goHome() {
-    navigate('/');
+    navigate('/home');
   }
 
   function handleViewStatus() {
-    alert('View Status clicked!');
+    navigate('/status');
   }
 
   return (
