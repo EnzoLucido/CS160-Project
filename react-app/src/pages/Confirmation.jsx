@@ -13,7 +13,7 @@ function Confirmation() {
   }
 
   function handleViewStatus() {
-    alert('View Status clicked!');
+    navigate('/status');
   }
 
   return (

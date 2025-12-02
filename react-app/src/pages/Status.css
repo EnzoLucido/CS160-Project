@@ -1,0 +1,77 @@
+.status-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.status-header {
+  background-color: #4a7c7e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.status-header h1 {
+  font-size: 20px;
+  margin: 0;
+  flex: 1;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.status-content {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.shelter-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shelter-item:last-child {
+  margin-bottom: 0;
+}
+
+.shelter-name {
+  color: #4a7c7e;
+  font-size: 24px;
+  margin: 0;
+}
+
+.view-status-button {
+  background-color: #4a7c7e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.view-status-button:hover {
+  background-color: #3d6668;
+}
+

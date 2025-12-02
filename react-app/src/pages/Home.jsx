@@ -16,6 +16,10 @@ function Home() {
     alert('Profile feature coming soon!');
   }
 
+  function goToStatus() {
+    navigate('/status');
+  }
+
   return (
     <div className="home-container">
       <div className="home-header">
@@ -36,6 +40,11 @@ function Home() {
         <div className="feature-card" onClick={goToProfile}>
           <h2>Profile</h2>
           <p>View and edit your profile</p>
+        </div>
+
+        <div className="feature-card" onClick={goToStatus}>
+          <h2>Status</h2>
+          <p>View the status of matching results</p>
         </div>
       </div>
     </div>
