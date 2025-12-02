@@ -24,7 +24,7 @@ function Home() {
     // Clear login status
     localStorage.removeItem('isLoggedIn');
     // Navigate to login page
-    navigate('/login');
+    navigate('/');
   }
 
   return (

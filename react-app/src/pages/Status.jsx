@@ -9,7 +9,7 @@ function Status() {
   }
 
   function goHome() {
-    navigate('/');
+    navigate('/home');
   }
 
   function handleViewStatus(shelterName) {

@@ -23,7 +23,7 @@ function Profile() {
   }
 
   function goHome() {
-    navigate('/');
+    navigate('/home');
   }
 
   function handleEdit() {

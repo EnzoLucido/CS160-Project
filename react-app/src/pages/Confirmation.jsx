@@ -9,7 +9,7 @@ function Confirmation() {
   }
 
   function goHome() {
-    navigate('/');
+    navigate('/home');
   }
 
   function handleViewStatus() {

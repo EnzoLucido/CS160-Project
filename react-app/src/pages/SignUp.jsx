@@ -22,17 +22,6 @@ function SignUp() {
 
   function handleSignUp(e) {
     e.preventDefault();
-    
-    // Validation
-    if (!formData.name || !formData.email || !formData.password) {
-      alert('Please fill in all required fields');
-      return;
-    }
-
-    if (formData.password !== formData.confirmPassword) {
-      alert('Passwords do not match');
-      return;
-    }
 
     // Save user profile
     const userProfile = {
@@ -42,12 +31,12 @@ function SignUp() {
       address: formData.address
     };
     localStorage.setItem('userProfile', JSON.stringify(userProfile));
-    
+
     // Set login status
     localStorage.setItem('isLoggedIn', 'true');
-    
+
     // Navigate to home page
-    navigate('/');
+    navigate('/home');
   }
 
   function goToLogin() {
@@ -64,7 +53,7 @@ function SignUp() {
 
         <form className="signup-form" onSubmit={handleSignUp}>
           <div className="form-group">
-            <label htmlFor="name">Full Name *</label>
+            <label htmlFor="name">Full Name</label>
             <input
               type="text"
               id="name"
@@ -72,12 +61,11 @@ function SignUp() {
               placeholder="Enter your full name"
               value={formData.name}
               onChange={(e) => handleChange('name', e.target.value)}
-              required
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="email">Email Address *</label>
+            <label htmlFor="email">Email Address</label>
             <input
               type="email"
               id="email"
@@ -85,7 +73,6 @@ function SignUp() {
               placeholder="Enter your email"
               value={formData.email}
               onChange={(e) => handleChange('email', e.target.value)}
-              required
             />
           </div>
 
@@ -114,7 +101,7 @@ function SignUp() {
           </div>
 
           <div className="form-group">
-            <label htmlFor="password">Password *</label>
+            <label htmlFor="password">Password</label>
             <input
               type="password"
               id="password"
@@ -122,12 +109,11 @@ function SignUp() {
               placeholder="Create a password"
               value={formData.password}
               onChange={(e) => handleChange('password', e.target.value)}
-              required
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="confirmPassword">Confirm Password *</label>
+            <label htmlFor="confirmPassword">Confirm Password</label>
             <input
               type="password"
               id="confirmPassword"
@@ -135,7 +121,6 @@ function SignUp() {
               placeholder="Confirm your password"
               value={formData.confirmPassword}
               onChange={(e) => handleChange('confirmPassword', e.target.value)}
-              required
             />
           </div>
 

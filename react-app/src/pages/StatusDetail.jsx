@@ -11,7 +11,7 @@ function StatusDetail() {
   }
 
   function goHome() {
-    navigate('/');
+    navigate('/home');
   }
 
   function handleContact() {

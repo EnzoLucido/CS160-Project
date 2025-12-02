@@ -10,15 +10,10 @@ function Login() {
   function handleLogin(e) {
     e.preventDefault();
 
-    // Simple validation
-    if (email && password) {
-      // Store login status
-      localStorage.setItem('isLoggedIn', 'true');
-      // Navigate to home page
-      navigate('/');
-    } else {
-      alert('Please enter both email and password');
-    }
+    // Store login status
+    localStorage.setItem('isLoggedIn', 'true');
+    // Navigate to home page
+    navigate('/home');
   }
 
   function goToSignUp() {
@@ -43,7 +38,6 @@ function Login() {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              required
             />
           </div>
 
@@ -56,7 +50,6 @@ function Login() {
               placeholder="Enter your password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              required
             />
           </div>
 
