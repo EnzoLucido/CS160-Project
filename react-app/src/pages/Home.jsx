@@ -9,7 +9,7 @@ function Home() {
   }
 
   function goToMyPets() {
-    alert('My Pets feature coming soon!');
+    navigate('/my-pets');
   }
 
   function goToProfile() {

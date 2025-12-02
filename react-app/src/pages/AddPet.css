@@ -1,0 +1,126 @@
+.add-pet-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.add-pet-header {
+  background-color: #4a7c7e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.add-pet-header h1 {
+  font-size: 20px;
+  margin: 0;
+  flex: 1;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-pet-content {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pet-illustration-small {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dog-placeholder-small {
+  font-size: 60px;
+}
+
+.pet-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.form-group input[type="text"] {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-wide {
+  width: 100%;
+}
+
+.input-short {
+  width: 200px;
+}
+
+.radio-label {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.radio-options {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.continue-button {
+  background-color: #4a7c7e;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 60px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.continue-button:hover {
+  background-color: #3d6668;
+}
