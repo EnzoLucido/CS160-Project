@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import MyPets from './pages/MyPets';
 import AddPet from './pages/AddPet';
+import FirstEntry from './pages/FirstEntry';
+import AboutYourPet from './pages/AboutYourPet';
+import WalkingTask from './pages/WalkingTask';
 import ShelterSearch from './pages/ShelterSearch';
 import ShelterDetail from './pages/ShelterDetail';
 import Confirmation from './pages/Confirmation';
@@ -19,6 +22,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/my-pets" element={<MyPets />} />
         <Route path="/add-pet" element={<AddPet />} />
+        <Route path="/first-entry" element={<FirstEntry />} />
+        <Route path="/about-your-pet" element={<AboutYourPet />} />
+        <Route path="/walking-task" element={<WalkingTask />} />
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />

@@ -1,0 +1,99 @@
+.first-entry-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.first-entry-header {
+  background-color: #4a7c7e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.first-entry-header h1 {
+  font-size: 18px;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.progress-step {
+  width: 40px;
+  height: 4px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+}
+
+.progress-step.active {
+  background-color: #4a7c7e;
+}
+
+.first-entry-content {
+  padding: 40px 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pet-illustration {
+  margin: 40px 0;
+}
+
+.dog-placeholder {
+  font-size: 100px;
+  margin: 20px 0;
+}
+
+.entry-text {
+  margin: 40px 0;
+}
+
+.entry-text p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.continue-button {
+  background-color: #4a7c7e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 80px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.continue-button:hover {
+  background-color: #3d6668;
+}
