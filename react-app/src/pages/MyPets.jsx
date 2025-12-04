@@ -12,6 +12,10 @@ function MyPets() {
     navigate('/add-pet');
   }
 
+  function goHome() {
+    navigate('/home');
+  }
+
   return (
     <div className="my-pets-container">
       <div className="my-pets-header">
@@ -19,6 +23,9 @@ function MyPets() {
           &lt;
         </button>
         <h1>My pets</h1>
+        <button className="home-button" onClick={goHome}>
+          Home
+        </button>
       </div>
 
       <div className="my-pets-content">

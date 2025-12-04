@@ -22,17 +22,13 @@ function WalkingTask() {
 
   return (
     <div className="walking-task-container">
-      <div className="task-header">
-        <span className="task-title">Walking</span>
-      </div>
-
       <div className="walking-header">
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
         <h1>About your pet</h1>
         <button className="home-button" onClick={goHome}>
-          🏠
+          Home
         </button>
       </div>
 

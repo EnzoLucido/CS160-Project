@@ -39,7 +39,7 @@ function AboutYourPet() {
         </button>
         <h1>About your pet</h1>
         <button className="home-button" onClick={goHome}>
-          🏠
+          Home
         </button>
       </div>
 
