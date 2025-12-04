@@ -41,6 +41,39 @@
   margin: 0 auto;
 }
 
+.video-upload-status {
+  background-color: #e8f5e8;
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.upload-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.upload-text {
+  color: #2e7d32;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.video-link {
+  display: block;
+  color: #1976d2;
+  font-weight: normal;
+  margin-top: 5px;
+  word-break: break-all;
+}
+
+.video-details {
+  color: #666;
+  margin-top: 8px;
+}
+
 .task-section h2 {
   color: #4a7c7e;
   font-size: 18px;
@@ -51,47 +84,44 @@
 
 .task-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  margin-bottom: 60px;
 }
 
 .task-button {
   background-color: white;
-  border: 2px solid #4a7c7e;
-  color: #4a7c7e;
-  padding: 15px 20px;
-  border-radius: 25px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .task-button:hover {
-  background-color: #f0f8f8;
+  border-color: #4a7c7e;
+  background-color: #f8f9fa;
 }
 
 .task-button.selected {
   background-color: #4a7c7e;
   color: white;
+  border-color: #4a7c7e;
 }
 
-.continue-button {
-  background-color: #4a7c7e;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  padding: 15px 80px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  width: 100%;
-  max-width: 300px;
-  display: block;
-  margin: 0 auto;
+.task-button.completed {
+  background-color: #e8f5e8;
+  border-color: #4caf50;
+  color: #2e7d32;
 }
 
-.continue-button:hover {
-  background-color: #3d6668;
+.checkmark {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 18px;
 }

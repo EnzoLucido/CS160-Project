@@ -5,6 +5,7 @@ import AddPet from './pages/AddPet';
 import FirstEntry from './pages/FirstEntry';
 import AboutYourPet from './pages/AboutYourPet';
 import WalkingTask from './pages/WalkingTask';
+import RecordingPage from './pages/RecordingPage';
 import ShelterSearch from './pages/ShelterSearch';
 import ShelterDetail from './pages/ShelterDetail';
 import Confirmation from './pages/Confirmation';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/first-entry" element={<FirstEntry />} />
         <Route path="/about-your-pet" element={<AboutYourPet />} />
         <Route path="/walking-task" element={<WalkingTask />} />
+        <Route path="/recording" element={<RecordingPage />} />
         <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />

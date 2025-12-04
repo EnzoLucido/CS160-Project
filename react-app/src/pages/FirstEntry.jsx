@@ -34,8 +34,7 @@ function FirstEntry() {
         </div>
 
         <div className="entry-text">
-          <p>We're going to ask you to record some videos of your pet at home.</p>
-          <p>This will help us understand their social habits for our pet matching.</p>
+          <p>We're going to ask you to record some videos of your pet at home. This will help us understand their social habits for our pet matching.</p>
         </div>
 
         <button className="continue-button" onClick={handleContinue}>

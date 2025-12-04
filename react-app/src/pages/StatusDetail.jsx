@@ -21,12 +21,12 @@ function StatusDetail() {
   const isPending = shelterName === 'Berkeley Humane';
   const petInfo = isPending
     ? {
-        name: 'Fluffy',
-        species: 'Cat',
-        breed: 'Persian',
-        age: '3 years',
+        name: 'Max',
+        species: 'Dog',
+        breed: 'Golden Retriever',
+        age: '7 years',
         sex: 'Female',
-        size: 'Medium'
+        size: 'Large'
       }
     : {
         name: 'Max',

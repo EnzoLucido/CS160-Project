@@ -1,8 +1,49 @@
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './WalkingTask.css';
 
 function WalkingTask() {
   const navigate = useNavigate();
+
+  // Initialize uploadedVideo state directly from localStorage
+  const [uploadedVideo, setUploadedVideo] = useState(() => {
+    const videoInfo = localStorage.getItem('uploadedVideo');
+    if (videoInfo) {
+      try {
+        return JSON.parse(videoInfo);
+      } catch (error) {
+        console.error('Error parsing video info:', error);
+        localStorage.removeItem('uploadedVideo');
+        return null;
+      }
+    }
+    return null;
+  });
+
+  // Listen for storage changes (when user uploads a new video)
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const videoInfo = localStorage.getItem('uploadedVideo');
+      if (videoInfo) {
+        try {
+          setUploadedVideo(JSON.parse(videoInfo));
+        } catch (error) {
+          console.error('Error parsing video info:', error);
+          localStorage.removeItem('uploadedVideo');
+          setUploadedVideo(null);
+        }
+      } else {
+        setUploadedVideo(null);
+      }
+    };
+
+    // Listen for focus events (when user returns to this tab/page)
+    window.addEventListener('focus', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('focus', handleStorageChange);
+    };
+  }, []);
 
   function goBack() {
     navigate(-1);
@@ -13,11 +54,28 @@ function WalkingTask() {
   }
 
   function handleRecord() {
-    alert('Recording started...');
+    navigate('/recording');
   }
 
   function handleUpload() {
-    alert('Upload functionality...');
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = 'video/*';
+    input.onchange = (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        // Store the video file info in localStorage
+        const videoInfo = {
+          name: file.name,
+          size: file.size,
+          type: file.type,
+          lastModified: file.lastModified
+        };
+        localStorage.setItem('uploadedVideo', JSON.stringify(videoInfo));
+        setUploadedVideo(videoInfo);
+      }
+    };
+    input.click();
   }
 
   return (
@@ -33,6 +91,19 @@ function WalkingTask() {
       </div>
 
       <div className="walking-content">
+        {uploadedVideo && (
+          <div className="video-upload-status">
+            <div className="upload-icon">📹</div>
+            <p className="upload-text">
+              <strong>Video uploaded:</strong>
+              <span className="video-link">{uploadedVideo.name}</span>
+            </p>
+            <div className="video-details">
+              <small>Size: {(uploadedVideo.size / (1024 * 1024)).toFixed(2)} MB</small>
+            </div>
+          </div>
+        )}
+
         <div className="dog-illustration">
           <div className="dogs-image">🐕 🐶</div>
         </div>
