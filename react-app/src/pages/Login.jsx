@@ -24,7 +24,7 @@ function Login() {
     <div className="login-container">
       <div className="login-card">
         <div className="login-header">
-          <h1>Pet Shelter App</h1>
+          <h1>OUR App</h1>
           <p className="login-subtitle">Welcome back! Please login to continue.</p>
         </div>
 

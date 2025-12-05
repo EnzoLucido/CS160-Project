@@ -10,6 +10,7 @@ import StatusDetail from './pages/StatusDetail';
 import Profile from './pages/Profile';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
+import BehaviorAnalysis from './pages/BehaviorAnalysis';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/status" element={<Status />} />
         <Route path="/status-detail" element={<StatusDetail />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/behavior-analysis" element={<BehaviorAnalysis />} />
       </Routes>
     </BrowserRouter>
   );

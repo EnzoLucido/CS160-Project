@@ -47,7 +47,7 @@ function SignUp() {
     <div className="signup-container">
       <div className="signup-card">
         <div className="signup-header">
-          <h1>Pet Shelter App</h1>
+          <h1>I App</h1>
           <p className="signup-subtitle">Create your account to get started</p>
         </div>
 

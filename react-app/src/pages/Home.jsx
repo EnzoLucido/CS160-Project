@@ -20,17 +20,19 @@ function Home() {
     navigate('/status');
   }
 
+  function goToBehaviorAnalysis() {
+    navigate('/behavior-analysis');
+  }
+
   function handleLogout() {
-    // Clear login status
     localStorage.removeItem('isLoggedIn');
-    // Navigate to login page
     navigate('/');
   }
 
   return (
     <div className="home-container">
       <div className="home-header">
-        <h1>Pet Shelter App</h1>
+        <h1>I APP</h1>
         <button className="logout-button" onClick={handleLogout}>
           Logout
         </button>
@@ -55,6 +57,11 @@ function Home() {
         <div className="feature-card" onClick={goToStatus}>
           <h2>Status</h2>
           <p>View the status of matching results</p>
+        </div>
+
+        <div className="feature-card" onClick={goToBehaviorAnalysis}>
+          <h2>Behavior Analysis</h2>
+          <p>Analyze dog behavior videos with AI</p>
         </div>
       </div>
     </div>
