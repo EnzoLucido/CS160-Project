@@ -64,6 +64,11 @@ function AboutYourPet() {
       return;
     }
 
+    if (task === 'Eating') {
+      navigate('/eating-task');
+      return;
+    }
+
     setSelectedTasks(prev =>
       prev.includes(task)
         ? prev.filter(t => t !== task)
