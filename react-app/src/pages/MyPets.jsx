@@ -5,11 +5,15 @@ function MyPets() {
   const navigate = useNavigate();
 
   function goBack() {
-    navigate(-1);
+    navigate('/home');
   }
 
   function goToAddPet() {
     navigate('/add-pet');
+  }
+
+  function goHome() {
+    navigate('/home');
   }
 
   return (
@@ -19,6 +23,9 @@ function MyPets() {
           &lt;
         </button>
         <h1>My pets</h1>
+        <button className="home-button" onClick={goHome}>
+          Home
+        </button>
       </div>
 
       <div className="my-pets-content">

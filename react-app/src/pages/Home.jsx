@@ -4,16 +4,16 @@ import './Home.css';
 function Home() {
   const navigate = useNavigate();
 
-  function goToShelterSearch() {
-    navigate('/shelter-search');
+  function goToProfile() {
+    navigate('/profile');
   }
 
   function goToMyPets() {
     navigate('/my-pets');
   }
 
-  function goToProfile() {
-    navigate('/profile');
+   function goToShelterSearch() {
+    navigate('/shelter-search');
   }
 
   function goToStatus() {
@@ -32,16 +32,16 @@ function Home() {
   return (
     <div className="home-container">
       <div className="home-header">
-        <h1>I APP</h1>
+        <h1>Shelter Dog Matching App</h1>
         <button className="logout-button" onClick={handleLogout}>
           Logout
         </button>
       </div>
 
       <div className="home-content">
-        <div className="feature-card" onClick={goToShelterSearch}>
-          <h2>Find a Shelter</h2>
-          <p>Search for pet shelters near you</p>
+        <div className="feature-card" onClick={goToProfile}>
+          <h2>Profile</h2>
+          <p>View and edit your profile</p>
         </div>
 
         <div className="feature-card" onClick={goToMyPets}>
@@ -49,9 +49,9 @@ function Home() {
           <p>Manage your pet information</p>
         </div>
 
-        <div className="feature-card" onClick={goToProfile}>
-          <h2>Profile</h2>
-          <p>View and edit your profile</p>
+        <div className="feature-card" onClick={goToShelterSearch}>
+          <h2>Find a Shelter</h2>
+          <p>Search for pet shelters near you</p>
         </div>
 
         <div className="feature-card" onClick={goToStatus}>

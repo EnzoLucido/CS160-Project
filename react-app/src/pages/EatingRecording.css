@@ -1,0 +1,141 @@
+.eating-recording-container {
+  min-height: 100vh;
+  background-color: #000;
+  color: white;
+}
+
+.eating-recording-header {
+  background-color: #4a7c7e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.eating-recording-header h1 {
+  font-size: 18px;
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.eating-recording-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: calc(100vh - 80px);
+}
+
+.camera-view {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: #222;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.camera-placeholder {
+  font-size: 80px;
+  color: #666;
+  position: relative;
+}
+
+.recording-indicator {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.recording-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.timer {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4a7c7e;
+  margin-bottom: 10px;
+}
+
+.instruction {
+  color: #ccc;
+  font-size: 16px;
+  margin: 0;
+}
+
+.recording-controls {
+  text-align: center;
+}
+
+.record-btn {
+  width: 80px;
+  height: 80px;
+  border: 4px solid white;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.record-btn:hover {
+  transform: scale(1.1);
+}
+
+.record-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.record-btn.recording .record-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #ff0000;
+}
+
+.control-text {
+  color: #ccc;
+  font-size: 14px;
+  margin: 0;
+}

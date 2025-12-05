@@ -10,6 +10,10 @@ function ShelterSearch() {
     navigate(-1);
   }
 
+  function goHome() {
+    navigate('/home');
+  }
+
   function handleSearch(e) {
     e.preventDefault();
     navigate('/shelter-detail');
@@ -22,6 +26,9 @@ function ShelterSearch() {
           &lt;
         </button>
         <h1>Find a shelter</h1>
+        <button className="home-button" onClick={goHome}>
+          Home
+        </button>
       </div>
 
       <div className="search-section">

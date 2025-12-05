@@ -11,17 +11,16 @@ function AddPet() {
   const [gender, setGender] = useState('male');
 
   function goBack() {
-    navigate(-1);
+    navigate('/my-pets');
   }
 
   function goHome() {
     navigate('/');
   }
 
-  function handleContinue() {
-    alert('Pet added! (This will save the pet data in the future)');
-    navigate('/my-pets');
-  }
+ function handleContinue() {
+  navigate('/first-entry');
+}
 
   return (
     <div className="add-pet-container">
