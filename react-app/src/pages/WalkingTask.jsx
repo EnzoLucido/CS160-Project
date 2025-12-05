@@ -105,7 +105,7 @@ function WalkingTask() {
         )}
 
         <div className="dog-illustration">
-          <div className="dogs-image">🐕 🐶</div>
+          <div className="dogs-image">🐶🐕 </div>
         </div>
 
         <div className="instruction-section">

@@ -19,7 +19,7 @@ function RecordingPage() {
   }, [isRecording]);
 
   function goBack() {
-    navigate(-1);
+    navigate('/walking-task');
   }
 
   function goHome() {

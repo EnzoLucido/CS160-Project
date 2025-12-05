@@ -11,7 +11,7 @@ function AddPet() {
   const [gender, setGender] = useState('male');
 
   function goBack() {
-    navigate(-1);
+    navigate('/my-pets');
   }
 
   function goHome() {

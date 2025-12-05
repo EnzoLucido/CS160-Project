@@ -51,7 +51,7 @@ function AboutYourPet() {
   }, []);
 
   function goBack() {
-    navigate(-1);
+    navigate('/first-entry');
   }
 
   function goHome() {

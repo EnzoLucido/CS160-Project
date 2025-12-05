@@ -5,7 +5,7 @@ function FirstEntry() {
   const navigate = useNavigate();
 
   function goBack() {
-    navigate(-1);
+    navigate('/add-pet');
   }
 
   function goHome() {

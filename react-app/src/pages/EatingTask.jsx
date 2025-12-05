@@ -46,7 +46,7 @@ function EatingTask() {
   }, []);
 
   function goBack() {
-    navigate(-1);
+    navigate('/about-your-pet');
   }
 
   function goHome() {
@@ -105,12 +105,12 @@ function EatingTask() {
         )}
 
         <div className="dog-illustration">
-          <div className="dogs-image">🐕 🍽️</div>
+          <div className="dogs-image">🐶🍽️</div>
         </div>
 
         <div className="instruction-section">
           <h2>Record your dog eating</h2>
-          <p>Record your dog eating for about 2 minutes. In this video, try to pet your dog and take away the food is possible.</p>
+          <p>Record your dog eating for about 2 minutes. In this video, try to pet your dog and take away the food if possible.</p>
         </div>
 
         <div className="button-section">

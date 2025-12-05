@@ -18,7 +18,7 @@ function EatingRecording() {
   }, [isRecording]);
 
   function goBack() {
-    navigate(-1);
+    navigate('/eating-task');
   }
 
   function goHome() {
