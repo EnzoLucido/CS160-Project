@@ -22,7 +22,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/my-pets" element={<MyPets />} />
         <Route path="/add-pet" element={<AddPet />} />
         <Route path="/first-entry" element={<FirstEntry />} />
@@ -31,10 +34,6 @@ function App() {
         <Route path="/eating-task" element={<EatingTask />} />
         <Route path="/recording" element={<RecordingPage />} />
         <Route path="/eating-recording" element={<EatingRecording />} />
-        <Route path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/home" element={<Home />} />
         <Route path="/shelter-search" element={<ShelterSearch />} />
         <Route path="/shelter-detail" element={<ShelterDetail />} />
         <Route path="/confirmation" element={<Confirmation />} />
