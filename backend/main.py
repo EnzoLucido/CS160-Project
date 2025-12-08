@@ -42,11 +42,13 @@ def analyze_single_video(video_path: str) -> dict:
 
     # Define the Prompt
     prompt = """
-    Watch this video of a dog behavioral assessment.
+    You are an expert canine behaviorist conducting a clinical assessment of a dog.
+    Analyze the provided video carefully, paying attention to micro-signals, body language, and context.
+    Your task is to generate a detailed safety assessment.
     Output a JSON object with the following fields:
     - aggression_level: (None, Moderate, or Severe),
     - warning_patterns: A string describing warning patterns the dog is displaying (separate multiple patterns with commas and spaces, e.g., "Growling, Snapping, Lunging")
-    - description: A 1-sentence summary of the behavior.
+    - description: A 3-sentence summary of the behavior.
 
     Return ONLY the JSON object, no additional text.
     """
