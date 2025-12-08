@@ -20,10 +20,6 @@ function Home() {
     navigate('/status');
   }
 
-  function goToBehaviorAnalysis() {
-    navigate('/behavior-analysis');
-  }
-
   function handleLogout() {
     localStorage.removeItem('isLoggedIn');
     navigate('/');
@@ -57,11 +53,6 @@ function Home() {
         <div className="feature-card" onClick={goToStatus}>
           <h2>Status</h2>
           <p>View the status of matching results</p>
-        </div>
-
-        <div className="feature-card" onClick={goToBehaviorAnalysis}>
-          <h2>Behavior Analysis</h2>
-          <p>Analyze dog behavior videos with AI</p>
         </div>
       </div>
     </div>
