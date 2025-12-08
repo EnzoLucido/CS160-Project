@@ -68,10 +68,6 @@ function AboutYourPet() {
     };
   }, []);
 
-  const handleGenerateReport = () => {
-    navigate('/comprehensive-report');
-  };
-
   function goBack() {
     navigate('/first-entry');
   }
@@ -130,17 +126,6 @@ function AboutYourPet() {
     }
   };
 
-  const hasAnyAnalysisResults = () => {
-    const walkingResults = localStorage.getItem('walkingAnalysisResults');
-    const eatingResults = localStorage.getItem('eatingAnalysisResults');
-    const playingResults = localStorage.getItem('playingAnalysisResults');
-    const cuesResults = localStorage.getItem('cuesAnalysisResults');
-    const childrenResults = localStorage.getItem('childrenAnalysisResults');
-    const animalsResults = localStorage.getItem('animalsAnalysisResults');
-
-    return walkingResults || eatingResults || playingResults || cuesResults || childrenResults || animalsResults;
-  };
-
   return (
     <div className="about-pet-container">
       <div className="about-pet-header">
@@ -174,14 +159,6 @@ function AboutYourPet() {
             ))}
           </div>
 
-          {hasAnyAnalysisResults() && (
-            <button
-              className="generate-report-button active"
-              onClick={handleGenerateReport}
-            >
-              Generate Comprehensive Report
-            </button>
-          )}
         </div>
       </div>
     </div>
