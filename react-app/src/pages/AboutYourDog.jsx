@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import './AboutYourPet.css';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import "./AboutYourDog.css";
 
 function AboutYourPet() {
   const navigate = useNavigate();
