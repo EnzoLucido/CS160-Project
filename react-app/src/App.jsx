@@ -6,6 +6,10 @@ import FirstEntry from './pages/FirstEntry';
 import AboutYourPet from './pages/AboutYourPet';
 import WalkingTask from './pages/WalkingTask';
 import EatingTask from './pages/EatingTask';
+import PlayingTask from './pages/PlayingTask';
+import CuesTask from './pages/CuesTask';
+import ChildrenTask from './pages/ChildrenTask';
+import AnimalsTask from './pages/AnimalsTask';
 import RecordingPage from './pages/RecordingPage';
 import EatingRecording from './pages/EatingRecording';
 import ShelterSearch from './pages/ShelterSearch';
@@ -33,6 +37,10 @@ function App() {
         <Route path="/about-your-pet" element={<AboutYourPet />} />
         <Route path="/walking-task" element={<WalkingTask />} />
         <Route path="/eating-task" element={<EatingTask />} />
+        <Route path="/playing-task" element={<PlayingTask />} />
+        <Route path="/cues-task" element={<CuesTask />} />
+        <Route path="/children-task" element={<ChildrenTask />} />
+        <Route path="/animals-task" element={<AnimalsTask />} />
         <Route path="/recording" element={<RecordingPage />} />
         <Route path="/eating-recording" element={<EatingRecording />} />
         <Route path="/shelter-search" element={<ShelterSearch />} />

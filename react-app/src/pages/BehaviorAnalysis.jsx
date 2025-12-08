@@ -166,7 +166,7 @@ function BehaviorAnalysis() {
           </div>
 
           <div>
-            <h2>Individual Video Analyses</h2>
+            <h2>Individual Video Analysis</h2>
             {results.individual_analyses.map((video, index) => (
               <div key={index} className="video-card">
                 <h3>Video {index + 1}: {video.video_name}</h3>

@@ -1,35 +1,33 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './WalkingTask.css';
+import './ChildrenTask.css';
 
-function WalkingTask() {
+function ChildrenTask() {
   const navigate = useNavigate();
 
-  // Initialize uploadedVideo state directly from localStorage
   const [uploadedVideo, setUploadedVideo] = useState(() => {
-    const videoInfo = localStorage.getItem('uploadedVideo');
+    const videoInfo = localStorage.getItem('uploadedChildrenVideo');
     if (videoInfo) {
       try {
         return JSON.parse(videoInfo);
       } catch (error) {
         console.error('Error parsing video info:', error);
-        localStorage.removeItem('uploadedVideo');
+        localStorage.removeItem('uploadedChildrenVideo');
         return null;
       }
     }
     return null;
   });
 
-  // Listen for storage changes (when user uploads a new video)
   useEffect(() => {
     const handleStorageChange = () => {
-      const videoInfo = localStorage.getItem('uploadedVideo');
+      const videoInfo = localStorage.getItem('uploadedChildrenVideo');
       if (videoInfo) {
         try {
           setUploadedVideo(JSON.parse(videoInfo));
         } catch (error) {
           console.error('Error parsing video info:', error);
-          localStorage.removeItem('uploadedVideo');
+          localStorage.removeItem('uploadedChildrenVideo');
           setUploadedVideo(null);
         }
       } else {
@@ -37,9 +35,7 @@ function WalkingTask() {
       }
     };
 
-    // Listen for focus events (when user returns to this tab/page)
     window.addEventListener('focus', handleStorageChange);
-
     return () => {
       window.removeEventListener('focus', handleStorageChange);
     };
@@ -54,7 +50,7 @@ function WalkingTask() {
   }
 
   function handleRecord() {
-    navigate('/recording');
+    navigate('/children-recording');
   }
 
   function handleUpload() {
@@ -64,14 +60,13 @@ function WalkingTask() {
     input.onchange = (event) => {
       const file = event.target.files[0];
       if (file) {
-        // Store the video file info in localStorage
         const videoInfo = {
           name: file.name,
           size: file.size,
           type: file.type,
           lastModified: file.lastModified
         };
-        localStorage.setItem('uploadedVideo', JSON.stringify(videoInfo));
+        localStorage.setItem('uploadedChildrenVideo', JSON.stringify(videoInfo));
         setUploadedVideo(videoInfo);
       }
     };
@@ -79,13 +74,13 @@ function WalkingTask() {
   }
 
   function handleDeleteVideo() {
-    localStorage.removeItem('uploadedVideo');
+    localStorage.removeItem('uploadedChildrenVideo');
     setUploadedVideo(null);
   }
 
   return (
-    <div className="walking-task-container">
-      <div className="walking-header">
+    <div className="children-task-container">
+      <div className="children-header">
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
@@ -95,7 +90,7 @@ function WalkingTask() {
         </button>
       </div>
 
-      <div className="walking-content">
+      <div className="children-content">
         {uploadedVideo && (
           <div className="video-upload-status">
             <div className="upload-icon">📹</div>
@@ -113,12 +108,12 @@ function WalkingTask() {
         )}
 
         <div className="dog-illustration">
-          <div className="dogs-image">🐶🐕 </div>
+          <div className="dogs-image">🐶👶</div>
         </div>
 
         <div className="instruction-section">
-          <h2>Record your dog walking</h2>
-          <p>Walk your dog like you typically would. This includes regular leashes and routes.</p>
+          <h2>Record your dog with children</h2>
+          <p>Record your dog interacting with children. This helps us understand how they behave around kids of different ages.</p>
         </div>
 
         <div className="button-section">
@@ -134,4 +129,4 @@ function WalkingTask() {
   );
 }
 
-export default WalkingTask;
+export default ChildrenTask;

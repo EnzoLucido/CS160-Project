@@ -78,6 +78,11 @@ function EatingTask() {
     input.click();
   }
 
+  function handleDeleteVideo() {
+    localStorage.removeItem('uploadedEatingVideo');
+    setUploadedVideo(null);
+  }
+
   return (
     <div className="eating-task-container">
       <div className="eating-header">
@@ -101,6 +106,9 @@ function EatingTask() {
             <div className="video-details">
               <small>Size: {(uploadedVideo.size / (1024 * 1024)).toFixed(2)} MB</small>
             </div>
+            <button className="delete-video-button" onClick={handleDeleteVideo}>
+              Delete Video
+            </button>
           </div>
         )}
 
@@ -110,7 +118,7 @@ function EatingTask() {
 
         <div className="instruction-section">
           <h2>Record your dog eating</h2>
-          <p>Record your dog eating for about 2 minutes. In this video, try to pet your dog and take away the food if possible.</p>
+          <p>Record your dog eating. In this video, try to pet your dog and take away the food if possible.</p>
         </div>
 
         <div className="button-section">
