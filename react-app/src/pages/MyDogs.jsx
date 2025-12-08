@@ -1,15 +1,15 @@
 import { useNavigate } from 'react-router-dom';
-import './MyPets.css';
+import './MyDogs.css';
 
-function MyPets() {
+function MyDogs() {
   const navigate = useNavigate();
 
   function goBack() {
     navigate('/home');
   }
 
-  function goToAddPet() {
-    navigate('/add-pet');
+  function goToAddDog() {
+    navigate('/add-dog');
   }
 
   function goHome() {
@@ -17,28 +17,28 @@ function MyPets() {
   }
 
   return (
-    <div className="my-pets-container">
-      <div className="my-pets-header">
+    <div className="my-dogs-container">
+      <div className="my-dogs-header">
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
-        <h1>My pets</h1>
+        <h1>My dogs</h1>
         <button className="home-button" onClick={goHome}>
           Home
         </button>
       </div>
 
-      <div className="my-pets-content">
-        <div className="pet-illustration">
+      <div className="my-dogs-content">
+        <div className="dog-illustration">
           <div className="dog-placeholder">🐕 🐕</div>
         </div>
 
         <div className="empty-state">
-          <h2>No pets added</h2>
-          <p>You don't have any pets</p>
+          <h2>No dogs added</h2>
+          <p>You don't have any dogs</p>
         </div>
 
-        <button className="add-pet-button" onClick={goToAddPet}>
+        <button className="add-dog-button" onClick={goToAddDog}>
           <div className="plus-icon">+</div>
         </button>
       </div>
@@ -46,4 +46,4 @@ function MyPets() {
   );
 }
 
-export default MyPets;
+export default MyDogs;

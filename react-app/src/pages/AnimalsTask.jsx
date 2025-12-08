@@ -42,7 +42,7 @@ function AnimalsTask() {
   }, []);
 
   function goBack() {
-    navigate('/about-your-pet');
+    navigate('/about-your-dog');
   }
 
   function goHome() {
@@ -84,7 +84,7 @@ function AnimalsTask() {
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
-        <h1>About your pet</h1>
+        <h1>About your dog</h1>
         <button className="home-button" onClick={goHome}>
           Home
         </button>
@@ -113,7 +113,7 @@ function AnimalsTask() {
 
         <div className="instruction-section">
           <h2>Record your dog with other animals</h2>
-          <p>Record your dog interacting with other animals (cats, dogs, etc.). This shows their social behavior with other pets.</p>
+          <p>Record your dog interacting with other animals (cats, dogs, etc.). This shows their social behavior with other dogs.</p>
         </div>
 
         <div className="button-section">

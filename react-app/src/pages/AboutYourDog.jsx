@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './AboutYourPet.css';
+import './AboutYourDog.css';
 
-function AboutYourPet() {
+function AboutYourDog() {
   const navigate = useNavigate();
   const [selectedTasks, setSelectedTasks] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -149,7 +149,7 @@ function AboutYourPet() {
       Playing: ['Toy removal', 'Overstimulation', 'Interruption'],
       Cues: ['Command confusion', 'Distractions', 'Frustration'],
       Children: ['Quick movements', 'High voices', 'Touching'],
-      Animals: ['Territory', 'Resource competition', 'Social hierarchy']
+      Animals: ['Territory', 'Resource comdogition', 'Social hierarchy']
     };
     const taskTriggers = triggers[taskType] || ['None'];
     return taskTriggers[Math.floor(Math.random() * taskTriggers.length)];
@@ -238,18 +238,18 @@ function AboutYourPet() {
   };
 
   return (
-    <div className="about-pet-container">
-      <div className="about-pet-header">
+    <div className="about-dog-container">
+      <div className="about-dog-header">
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
-        <h1>About your pet</h1>
+        <h1>About your dog</h1>
         <button className="home-button" onClick={goHome}>
           Home
         </button>
       </div>
 
-      <div className="about-pet-content">
+      <div className="about-dog-content">
         <div className="task-section">
           <h2>Please Complete the Following Tasks</h2>
 
@@ -358,4 +358,4 @@ function AboutYourPet() {
   );
 }
 
-export default AboutYourPet;
+export default AboutYourDog;

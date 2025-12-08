@@ -46,7 +46,7 @@ function EatingTask() {
   }, []);
 
   function goBack() {
-    navigate('/about-your-pet');
+    navigate('/about-your-dog');
   }
 
   function goHome() {
@@ -89,7 +89,7 @@ function EatingTask() {
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
-        <h1>About your pet</h1>
+        <h1>About your dog</h1>
         <button className="home-button" onClick={goHome}>
           Home
         </button>
@@ -118,7 +118,7 @@ function EatingTask() {
 
         <div className="instruction-section">
           <h2>Record your dog eating</h2>
-          <p>Record your dog eating. In this video, try to pet your dog and take away the food if possible.</p>
+          <p>Record your dog eating. In this video, try to dog your dog and take away the food if possible.</p>
         </div>
 
         <div className="button-section">

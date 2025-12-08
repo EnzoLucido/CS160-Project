@@ -1,17 +1,17 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './AddPet.css';
+import './AddDog.css';
 
-function AddPet() {
+function AddDog() {
   const navigate = useNavigate();
-  const [petName, setPetName] = useState('');
+  const [dogName, setDogName] = useState('');
   const [age, setAge] = useState('');
   const [breed, setBreed] = useState('');
   const [spayed, setSpayed] = useState('yes');
   const [gender, setGender] = useState('male');
 
   function goBack() {
-    navigate('/my-pets');
+    navigate('/my-dogs');
   }
 
   function goHome() {
@@ -23,29 +23,29 @@ function AddPet() {
 }
 
   return (
-    <div className="add-pet-container">
-      <div className="add-pet-header">
+    <div className="add-dog-container">
+      <div className="add-dog-header">
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
-        <h1>Add a pet</h1>
+        <h1>Add a dog</h1>
         <button className="home-button" onClick={goHome}>
           Home
         </button>
       </div>
 
-      <div className="add-pet-content">
-        <div className="pet-illustration-small">
+      <div className="add-dog-content">
+        <div className="dog-illustration-small">
           <div className="dog-placeholder-small">🐕 🐕</div>
         </div>
 
-        <form className="pet-form">
+        <form className="dog-form">
           <div className="form-group">
-            <label>Pet's name</label>
+            <label>Dog's name</label>
             <input
               type="text"
-              value={petName}
-              onChange={(e) => setPetName(e.target.value)}
+              value={dogName}
+              onChange={(e) => setDogName(e.target.value)}
               className="input-wide"
             />
           </div>
@@ -131,4 +131,4 @@ function AddPet() {
   );
 }
 
-export default AddPet;
+export default AddDog;

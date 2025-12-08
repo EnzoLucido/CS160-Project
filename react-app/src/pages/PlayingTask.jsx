@@ -42,7 +42,7 @@ function PlayingTask() {
   }, []);
 
   function goBack() {
-    navigate('/about-your-pet');
+    navigate('/about-your-dog');
   }
 
   function goHome() {
@@ -84,7 +84,7 @@ function PlayingTask() {
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
-        <h1>About your pet</h1>
+        <h1>About your dog</h1>
         <button className="home-button" onClick={goHome}>
           Home
         </button>

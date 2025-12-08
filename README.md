@@ -1,15 +1,15 @@
-# CS160-Project - Pet Shelter App
+# CS160-Project - Dog Shelter App
 
-A React-based web application for finding pet shelters and matching the pets owners' own pets with pets in shelters based on pet information. Built with React, React Router, and Vite.
+A React-based web application for finding dog shelters and matching the dogs owners' own dogs with dogs in shelters based on dog information. Built with React, React Router, and Vite.
 
 ## Features
 
-- **Find a Shelter**: Search for pet shelters near you
+- **Find a Shelter**: Search for dog shelters near you
 - **Shelter Details**: View shelter information including address, phone, and website
-- **Send Pet Information**: Send your pet's information to shelters
-- **My Pets**: Manage your pet information
+- **Send Dog Information**: Send your dog's information to shelters
+- **My Dogs**: Manage your dog information
 - **Profile**: View and edit your profile
-- **Status**: View the status of your pet's information sent to shelters
+- **Status**: View the status of your dog's information sent to shelters
 ß
 ## Prerequisites
 

@@ -48,7 +48,7 @@
   text-align: center;
 }
 
-.pet-info-section {
+.dog-info-section {
   background-color: white;
   padding: 30px;
   border-radius: 15px;
@@ -114,7 +114,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-.match-pet-name {
+.match-dog-name {
   color: #4a7c7e;
   font-size: 22px;
   margin: 0;

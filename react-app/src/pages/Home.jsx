@@ -8,8 +8,8 @@ function Home() {
     navigate('/profile');
   }
 
-  function goToMyPets() {
-    navigate('/my-pets');
+  function goToMyDogs() {
+    navigate('/my-dogs');
   }
 
    function goToShelterSearch() {
@@ -44,14 +44,14 @@ function Home() {
           <p>View and edit your profile</p>
         </div>
 
-        <div className="feature-card" onClick={goToMyPets}>
-          <h2>My Pets</h2>
-          <p>Manage your pet information</p>
+        <div className="feature-card" onClick={goToMyDogs}>
+          <h2>My Dogs</h2>
+          <p>Manage your dog information</p>
         </div>
 
         <div className="feature-card" onClick={goToShelterSearch}>
           <h2>Find a Shelter</h2>
-          <p>Search for pet shelters near you</p>
+          <p>Search for dog shelters near you</p>
         </div>
 
         <div className="feature-card" onClick={goToStatus}>

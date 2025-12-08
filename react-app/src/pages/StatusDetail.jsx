@@ -19,7 +19,7 @@ function StatusDetail() {
   }
 
   const isPending = shelterName === 'Berkeley Humane';
-  const petInfo = isPending
+  const dogInfo = isPending
     ? {
         name: 'Max',
         species: 'Dog',
@@ -75,32 +75,32 @@ function StatusDetail() {
       <div className="status-detail-content">
         <h2 className="shelter-title">{shelterName}</h2>
 
-        <div className="pet-info-section">
-          <h3 className="section-title">Your Pet's Information</h3>
+        <div className="dog-info-section">
+          <h3 className="section-title">Your Dog's Information</h3>
           <div className="info-grid">
             <div className="info-item">
               <span className="info-label">Name:</span>
-              <span className="info-value">{petInfo.name}</span>
+              <span className="info-value">{dogInfo.name}</span>
             </div>
             <div className="info-item">
               <span className="info-label">Species:</span>
-              <span className="info-value">{petInfo.species}</span>
+              <span className="info-value">{dogInfo.species}</span>
             </div>
             <div className="info-item">
               <span className="info-label">Breed:</span>
-              <span className="info-value">{petInfo.breed}</span>
+              <span className="info-value">{dogInfo.breed}</span>
             </div>
             <div className="info-item">
               <span className="info-label">Age:</span>
-              <span className="info-value">{petInfo.age}</span>
+              <span className="info-value">{dogInfo.age}</span>
             </div>
             <div className="info-item">
               <span className="info-label">Sex:</span>
-              <span className="info-value">{petInfo.sex}</span>
+              <span className="info-value">{dogInfo.sex}</span>
             </div>
             <div className="info-item">
               <span className="info-label">Size:</span>
-              <span className="info-value">{petInfo.size}</span>
+              <span className="info-value">{dogInfo.size}</span>
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@ function StatusDetail() {
             <h3 className="section-title">Status</h3>
             <div className="pending-card">
               <p className="pending-text">
-                Your request is currently pending. The shelter is reviewing your pet's information.
+                Your request is currently pending. The shelter is reviewing your dog's information.
               </p>
               <button className="contact-button" onClick={handleContact}>
                 Contact Shelter
@@ -123,7 +123,7 @@ function StatusDetail() {
             {matchResults.map((match, index) => (
               <div key={index} className="match-card">
                 <div className="match-header">
-                  <h4 className="match-pet-name">{match.name}</h4>
+                  <h4 className="match-dog-name">{match.name}</h4>
                   <span className="match-percentage">{match.match} Match</span>
                 </div>
                 <div className="match-details">

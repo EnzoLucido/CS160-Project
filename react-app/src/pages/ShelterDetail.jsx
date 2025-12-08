@@ -38,7 +38,7 @@ function ShelterDetail() {
         </div>
 
         <div className="send-section">
-          <p className="send-prompt">Do you want to send information of your pets to this shelter?</p>
+          <p className="send-prompt">Do you want to send information of your dogs to this shelter?</p>
           <button className="send-button" onClick={handleSend}>
             Send
           </button>

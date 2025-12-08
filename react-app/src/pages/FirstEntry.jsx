@@ -5,7 +5,7 @@ function FirstEntry() {
   const navigate = useNavigate();
 
   function goBack() {
-    navigate('/add-pet');
+    navigate('/add-dog');
   }
 
   function goHome() {
@@ -13,7 +13,7 @@ function FirstEntry() {
   }
 
   function handleContinue() {
-    navigate('/about-your-pet');
+    navigate('/about-your-dog');
   }
 
   return (
@@ -22,19 +22,19 @@ function FirstEntry() {
         <button className="back-button" onClick={goBack}>
           &lt;
         </button>
-        <h1>About your pet</h1>
+        <h1>About your dog</h1>
         <button className="home-button" onClick={goHome}>
           Home
         </button>
       </div>
 
       <div className="first-entry-content">
-        <div className="pet-illustration">
+        <div className="dog-illustration">
           <div className="dog-placeholder">🐕 🐕</div>
         </div>
 
         <div className="entry-text">
-          <p>We're going to ask you to record some videos of your pet at home. This will help us understand their social habits for our pet matching.</p>
+          <p>We're going to ask you to record some videos of your dog at home. This will help us understand their social habits for our dog matching.</p>
         </div>
 
         <button className="continue-button" onClick={handleContinue}>

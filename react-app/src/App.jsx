@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import MyPets from './pages/MyPets';
-import AddPet from './pages/AddPet';
+import MyDogs from './pages/MyDogs';
+import AddDog from './pages/AddDog';
 import FirstEntry from './pages/FirstEntry';
-import AboutYourPet from './pages/AboutYourPet';
+import AboutYourDog from './pages/AboutYourDog';
 import WalkingTask from './pages/WalkingTask';
 import EatingTask from './pages/EatingTask';
 import PlayingTask from './pages/PlayingTask';
@@ -31,10 +31,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/my-pets" element={<MyPets />} />
-        <Route path="/add-pet" element={<AddPet />} />
+        <Route path="/my-dogs" element={<MyDogs />} />
+        <Route path="/add-dog" element={<AddDog />} />
         <Route path="/first-entry" element={<FirstEntry />} />
-        <Route path="/about-your-pet" element={<AboutYourPet />} />
+        <Route path="/about-your-dog" element={<AboutYourDog />} />
         <Route path="/walking-task" element={<WalkingTask />} />
         <Route path="/eating-task" element={<EatingTask />} />
         <Route path="/playing-task" element={<PlayingTask />} />
