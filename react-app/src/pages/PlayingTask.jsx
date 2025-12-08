@@ -84,8 +84,10 @@ function PlayingTask() {
 
   function handleDeleteVideo() {
     localStorage.removeItem('uploadedPlayingVideo');
+    localStorage.removeItem('playingAnalysisResults');
     setUploadedVideo(null);
     setSelectedFile(null);
+    setResults(null);
   }
 
   const handleAnalyzeVideo = async () => {
