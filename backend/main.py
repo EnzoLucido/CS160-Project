@@ -17,11 +17,13 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://cs-160-project.vercel.app"
+        "https://cs-160-project.vercel.app",
+        "https://clean-cs160.onrender.com" 
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    
 )
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
