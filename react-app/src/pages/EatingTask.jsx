@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './EatingTask.css';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 function EatingTask() {
   const navigate = useNavigate();
 
@@ -110,7 +112,7 @@ function EatingTask() {
     formData.append('files', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:8000/analyze-videos/', {
+      const response = await fetch(`${API_URL}/analyze-videos/`, {
         method: 'POST',
         body: formData,
       });

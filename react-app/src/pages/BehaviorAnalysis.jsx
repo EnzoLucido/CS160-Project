@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './BehaviorAnalysis.css';
 
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+
 function BehaviorAnalysis() {
   const navigate = useNavigate();
   const [selectedFiles, setSelectedFiles] = useState([]);
@@ -33,7 +35,7 @@ function BehaviorAnalysis() {
     });
 
     try {
-      const response = await fetch('http://localhost:8000/analyze-videos/', {
+      const response = await fetch(`${API_URL}/analyze-videos/`, {
         method: 'POST',
         body: formData,
       });
